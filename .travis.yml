@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.9"
+
+env: 
+  - FLASK_TESTING=True
+
+install:
+  - pip install poetry
+  - poetry install
+
+script:
+  - poetry run pytest
